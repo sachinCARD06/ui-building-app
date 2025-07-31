@@ -8,28 +8,28 @@ import {
 
 function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 p-8">
+    <div className="min-h-screen p-8 bg-gradient-to-br from-green-50 to-emerald-100">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-transparent bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text mb-4">
+        <div className="mb-12 text-center">
+          <h1 className="mb-4 text-5xl font-bold text-transparent bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text">
             About Us
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="max-w-3xl mx-auto text-xl text-gray-600">
             We are passionate about creating amazing experiences and building
             the future of web development.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+        <div className="grid grid-cols-1 gap-12 mb-12 lg:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            <h2 className="mb-6 text-3xl font-bold text-gray-800">
               Our Mission
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="mb-6 text-lg text-gray-600">
               To empower developers and businesses with cutting-edge technology
               solutions that drive innovation and growth.
             </p>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="mb-6 text-lg text-gray-600">
               We believe in the power of collaboration, creativity, and
               continuous learning to solve complex challenges.
             </p>
@@ -41,12 +41,12 @@ function About() {
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            <h2 className="mb-6 text-3xl font-bold text-gray-800">
               Our Values
             </h2>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full mt-2"></div>
+                <div className="w-3 h-3 mt-2 bg-green-500 rounded-full"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Innovation</h3>
                   <p className="text-gray-600">
@@ -56,7 +56,7 @@ function About() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full mt-2"></div>
+                <div className="w-3 h-3 mt-2 bg-green-500 rounded-full"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Quality</h3>
                   <p className="text-gray-600">
@@ -65,7 +65,7 @@ function About() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full mt-2"></div>
+                <div className="w-3 h-3 mt-2 bg-green-500 rounded-full"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Collaboration</h3>
                   <p className="text-gray-600">
@@ -78,13 +78,13 @@ function About() {
         </div>
 
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+          <h2 className="mb-8 text-3xl font-bold text-center text-gray-800">
             Our Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mx-auto mb-4"></div>
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-400 to-emerald-500"></div>
                 <CardTitle>John Doe</CardTitle>
                 <CardDescription>CEO & Founder</CardDescription>
               </CardHeader>
@@ -96,9 +96,9 @@ function About() {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <Card className="text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mx-auto mb-4"></div>
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-400 to-cyan-500"></div>
                 <CardTitle>Jane Smith</CardTitle>
                 <CardDescription>CTO</CardDescription>
               </CardHeader>
@@ -110,9 +110,9 @@ function About() {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <Card className="text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mx-auto mb-4"></div>
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-500"></div>
                 <CardTitle>Mike Johnson</CardTitle>
                 <CardDescription>Lead Developer</CardDescription>
               </CardHeader>
@@ -127,17 +127,17 @@ function About() {
         </div>
 
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          <h2 className="mb-6 text-3xl font-bold text-gray-800">
             Get in Touch
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="mb-8 text-lg text-gray-600">
             Ready to start your next project? We'd love to hear from you!
           </p>
           <div className="flex justify-center space-x-4">
-            <button className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors">
+            <button className="px-6 py-3 font-semibold text-white transition-colors bg-green-600 rounded-lg hover:bg-green-700">
               Contact Us
             </button>
-            <button className="px-6 py-3 border border-green-600 text-green-600 hover:bg-green-50 font-semibold rounded-lg transition-colors">
+            <button className="px-6 py-3 font-semibold text-green-600 transition-colors border border-green-600 rounded-lg hover:bg-green-50">
               Learn More
             </button>
           </div>
