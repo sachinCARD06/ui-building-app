@@ -15,9 +15,9 @@ const AuthHeader = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-white/20 backdrop-blur-sm">
+    <nav className="sticky top-0 z-50 bg-white border-b shadow-md border-white/20 backdrop-blur-sm">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-12">
           <div className="flex items-center">
             <Link
               to="/"
@@ -29,9 +29,9 @@ const AuthHeader = () => {
 
           <div className="items-center hidden space-x-4 md:flex">
             <Link
-              to="/login"
+              to="/auth/login"
               className={`px-4 py-2 text-sm font-medium transition-all duration-200 rounded-md ${
-                isActive('/login')
+                isActive('/auth/login')
                   ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white'
                   : 'text-gray-700 hover:text-gray-900'
               }`}
@@ -39,9 +39,9 @@ const AuthHeader = () => {
               Sign In
             </Link>
             <Link
-              to="/register"
+              to="/auth/register"
               className={`px-4 py-2 text-sm font-medium transition-all duration-200 rounded-md ${
-                isActive('/register')
+                isActive('/auth/register')
                   ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white'
                   : 'text-gray-700 hover:text-gray-900'
               }`}

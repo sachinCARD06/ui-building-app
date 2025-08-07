@@ -9,10 +9,10 @@ const MainLayout = () => {
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
       <div className="flex">
-        <div className="mt-16 shadow-md">
+        <div className="mt-12 shadow-md">
           <Sidebar />
         </div>
-        <main className="flex-1 ml-[55px]">
+        <main className="flex-1 ml-[45px]">
           <Suspense
             fallback={
               <div className="flex items-center justify-center min-h-[400px]">
